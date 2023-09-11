@@ -10,13 +10,10 @@ int main(void)
 
 	for (n = 0; n <= 9; n++)
 	{
-		if (n == 9)
-		{
-		putchar('0' + n);
-		break;
-		}
 /*'0' == 48 which is ascii code for zero */
 		putchar('0' + n);
+			if (n == 9)
+				break;
 		putchar(44);
 		putchar(32);
 	}
