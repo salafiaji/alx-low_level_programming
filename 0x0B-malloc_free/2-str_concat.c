@@ -3,8 +3,8 @@
 #include <string.h>
 /**
  * *str_concat - concatenate two strings
- * @*s1: first variable
- * @*s2: second variable
+ * @s1: first variable
+ * @s2: second variable
  * Return: pointer to character
  */
 
@@ -21,7 +21,7 @@ char *str_concat(char *s1, char *s2)
 		len++;
 	len++;
 	concat = malloc(sizeof(char) * len);
-	if (concat ==NULL)
+	if (concat == NULL)
 		return (NULL);
 	for (i = 0; s1[i] != '\0'; i++)
 		concat[i] = s1[i];
